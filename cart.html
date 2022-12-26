@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="wendy's burger, burger, best burger, yummy burger">
+  <meta name="description" content="website for Wendy's Burger">
+  <meta name="author" content="Vince Ybañez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wendy's Burger</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header clearfix">
+    <div class="container">
+      <div class="branding">
+        <a href="index.html">
+          <img src="images/logo.png" width="30" alt="Wendy's Burger Logo">
+        </a>
+      </div>
+      <div class="navbar">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="stores.html">Stores</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="cart-btn"><i class="fas fa-cart-plus cart-active"></i> <sup
+                class="cart-active">5</sup></a></li>
+          <li class="dropdown"><a href="#" class="cart-btn dropdown-btn"><i class="fas fa-user"></i></a>
+            <div class="dropdown-menu">
+              <a href="#">My Account</a>
+              <a href="#">Sign Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- cart -->
+  <div class="cart clearfix">
+    <div class="container">
+      <h1>Your Cart</h1>
+
+      <div class="wrapper-60">
+        <div class="responsive-table">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="images/grilled-beef-burger.png" width="100" alt="" class="cart-image">
+                  <p>Grilled Beef Burger</p>
+                </td>
+                <td>
+                  &#8369; 149.00
+                </td>
+                <td>
+                  <span class="add-minus-btn">&minus;</span> <span class="quantity">2</span> <span
+                    class="add-minus-btn">&plus;</span>
+                  <div class="links">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-trash"></i>
+                  </div>
+                </td>
+                <td>&#8369; 298.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/bacon-cheese-burger.png" width="100" alt="" class="cart-image">
+                  <p>Bacon Cheeseburger</p>
+                </td>
+                <td>
+                  &#8369; 99.00
+                </td>
+                <td>
+                  <span class="add-minus-btn disabled-btn">&minus;</span> <span class="quantity">1</span> <span
+                    class="add-minus-btn">&plus;</span>
+                  <div class="links">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-trash"></i>
+                  </div>
+                </td>
+                <td>&#8369; 99.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/colorado-burger.png" width="100" alt="" class="cart-image">
+                  <p>Colorado Burger</p>
+                </td>
+                <td>
+                  &#8369; 199.00
+                </td>
+                <td>
+                  <span class="add-minus-btn">&minus;</span> <span class="quantity">3</span> <span
+                    class="add-minus-btn">&plus;</span>
+                  <div class="links">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-trash"></i>
+                  </div>
+                </td>
+                <td>&#8369; 597.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="wrapper-40">
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="summary clearfix">
+            <div class="wrapper-50">
+              <p class="summary-label">Subtotal</p>
+            </div>
+            <div class="wrapper-50">
+              <p class="summary-value">&#8369; 994.00</p>
+            </div>
+          </div>
+          <div class="summary clearfix">
+            <div class="wrapper-50">
+              <p class="summary-label">Sales Tax</p>
+            </div>
+            <div class="wrapper-50">
+              <p class="summary-value">&#8369; 49.75</p>
+            </div>
+          </div>
+          <div class="summary clearfix">
+            <div class="wrapper-50">
+              <p class="summary-label">Shipping Fee</p>
+            </div>
+            <div class="wrapper-50">
+              <p class="summary-value">&#8369; 75.00</p>
+            </div>
+          </div>
+          <form action="#" method="post" enctype="application/x-www-form-urlencoded" class="voucher-form">
+            <div class="wrapper-60">
+              <div class="form-group">
+                <input type="text" name="voucher" id="voucher" placeholder="Enter Voucher Code" required>
+              </div>
+            </div>
+            <div class="wrapper-40">
+              <div class="form-group">
+                <input type="submit" value="Apply ">
+              </div>
+            </div>
+          </form>
+          <div class="summary clearfix">
+            <div class="wrapper-50">
+              <p class="summary-label summary-total">Total</p>
+            </div>
+            <div class="wrapper-50">
+              <p class="summary-value summary-total">&#8369; 1118.75</p>
+            </div>
+          </div>
+          <button type="button" id="checkout-btn">Proceed to checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer clearfix">
+    <div class="container">
+      <div class="wrapper-50">
+        <div class="related-links">
+          <h4>Learn More</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Franchising</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+          <p>&copy; 2022 Wendy's Burger. All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="wrapper-50">
+        <div class="social-links">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
