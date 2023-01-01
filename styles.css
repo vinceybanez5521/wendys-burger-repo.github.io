@@ -53,6 +53,10 @@ ul {
   width: 50%;
   float: left;
 }
+.row {
+  margin: 10px 0;
+  overflow: hidden;
+}
 .wrapper-33 {
   width: 33.33%;
   float: left;
@@ -281,6 +285,8 @@ ul {
   margin-bottom: 50px;
 }
 .feature {
+  height: 550px;
+  overflow: hidden;
   margin: 5px;
   background-color: white;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
@@ -289,7 +295,9 @@ ul {
 }
 .feature h3,
 .deal h3 {
+  overflow: hidden;
   margin-top: 10px;
+  white-space: nowrap;
 }
 .feature p,
 .deal p {
