@@ -17,4 +17,4 @@ I also learned how to use media queries to make the website responsive to differ
 
 ## Preview
 
-[Preview](images/preview.PNG)
+![Preview](images/preview.PNG)
